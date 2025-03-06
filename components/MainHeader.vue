@@ -15,6 +15,9 @@
                 <button data-aos="fade-down" data-aos-delay="300" >LinkedIn</button>
                 <button data-aos="fade-down" data-aos-delay="350" >Resume</button>
             </div>
+            <div class="toggle">
+                <Icon name="material-symbols:keyboard-double-arrow-left" />
+            </div>
         </div>
     </div>
 </template>
@@ -84,6 +87,28 @@
 
             }
         }
+        .toggle {
+            display: none;
+
+            span {
+                font-size: 3rem;
+            }
+        }
     }
 }
+
+
+@media (max-width: 850px) {
+    .mainHeader {
+        .first {
+            .jumps {
+                display: none;
+            }
+            .toggle {
+                display: flex;
+            }
+        }
+    }
+}
+
 </style>

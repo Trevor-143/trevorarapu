@@ -5,7 +5,7 @@
             <IntroText />
             <Projects />
         </div>
-        <!-- <Stack /> -->
+        <Skills />
         <NewAbout />
     </div>
 </template>
