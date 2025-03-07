@@ -12,3 +12,9 @@
 :root {
     --lightText: #4b4b4b;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+    }
+}

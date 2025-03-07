@@ -111,4 +111,19 @@
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    .mainHeader {
+        .first {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+
+            .jumps {
+                button {
+                    color: #eeeeee;
+                }
+            }
+        }
+    }
+}
+
 </style>

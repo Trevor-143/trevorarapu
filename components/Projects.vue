@@ -1,5 +1,5 @@
 <template>
-    <div class="container" >
+    <div class="container">
         <div class="inner">
             <img data-aos="fade-up" data-aos-duration="1000" v-for="i in images" :src="i" alt="project image">
         </div>
@@ -20,7 +20,6 @@ const images = [
 </script>
 
 <style lang="scss" scoped>
-
 .container {
     display: flex;
     align-items: center;
@@ -43,4 +42,12 @@ const images = [
     }
 }
 
+@media (max-width: 700px) {
+    .container {
+        .inner {
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+        }
+    }
+}
 </style>

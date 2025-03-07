@@ -1,11 +1,13 @@
 <template>
-    <div class="skills" >
+    <div class="skills">
         <div class="inner">
             <div class="top">
-                <h3 data-aos="fade-up" >Let me show you my toys. <span>😁</span> </h3>
+                <h3 data-aos="fade-up" data-aos-duration="1000">Let me show you my toys. </h3>
+                <p data-aos="fade-up" data-aos-duration="1000">Yap! These are all my favorite toys at this time. Am learning Rust 🦀 And am
+                    loving it so these will be edited later.</p>
             </div>
             <div class="skillList">
-                <div data-aos="fade-up" class="each" v-for="(one, idx) in tech" >
+                <div data-aos="fade-up" data-aos-duration="1000" class="each" v-for="(one, idx) in tech">
                     <img :src="one.img" alt="stack image">
                     <div class="last">
                         <h3>{{ one.name }}</h3>
@@ -37,10 +39,9 @@ const tech = ref([
 </script>
 
 <style lang="scss" scoped>
-
 .skills {
     padding: 1rem;
-    margin: 3rem 0;
+    margin: 6rem 0;
 
     .inner {
         display: flex;
@@ -50,33 +51,35 @@ const tech = ref([
         .top {
             text-align: center;
             display: flex;
+            flex-direction: column;
             align-items: center;
 
             h3 {
-                font-size: 1.5rem;
+                font-size: 2rem;
                 font-weight: 700;
                 display: flex;
                 align-items: center;
+                margin-bottom: 1rem;
+            }
 
-                span {
-                    font-size: 3rem;
-                }
+            p {
+                max-width: 700px;
             }
         }
+
         .skillList {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            max-width: 1300px;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            max-width: 1350px;
+            width: 100%;
             margin-top: 2rem;
 
             .each {
                 padding: 2rem;
-                width: 15rem;
-                margin: 0.5rem;
+                width: 100%;
                 border: 2px solid #eeeeee;
-                background-color: #fcfcfc;
+                background-color: #f3f3f3;
                 border-radius: 0.5rem;
 
                 img {
@@ -103,4 +106,28 @@ const tech = ref([
     }
 }
 
+@media (prefers-color-scheme: dark) {
+
+    .skills {
+        .inner {
+            .top {
+                color: #eeeeee;
+
+                h3 {
+                    color: #ffffff;
+                }
+            }
+
+            .skillList {
+                .each {
+                    border: 2px solid #2c2c2c;
+                    background-color: #131313;
+
+                    color: #eeeeee;
+                }
+            }
+        }
+    }
+
+}
 </style>

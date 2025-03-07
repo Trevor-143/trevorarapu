@@ -2,15 +2,21 @@
     <div class="aboutPage">
         <div class="inner">
             <img data-aos="fade-up" data-aos-duration="1000" src="/images/trevor.jpg" alt="Trevor's image">
-            <h3 data-aos="fade-up" > <Icon name="typcn:info-large-outline" /> Something small about myself.</h3>
-            <p data-aos="fade-up" data-aos-duration="1000" >Hi, my name is Arapu Trevor, and I am a software developer with about 3 years of experience. I
+            <h3 data-aos="fade-up">
+                <Icon name="typcn:info-large-outline" /> Something small about myself.
+            </h3>
+            <p data-aos="fade-up" data-aos-duration="1000">Hi, my name is Arapu Trevor, and I am a software developer
+                with about 3 years of experience. I
                 specialize in front-end development using JavaScript, CSS, and HTML. Additionally, I have experience
                 working with different frameworks, including Vue with Nuxt.js. Currently, my main focus is on enhancing
-                my skills in front-end development.</p>
-            <p data-aos="fade-up" data-aos-duration="1000" >I also love building beautiful mobile applications with Ionic. My discovery of Nuxt-Ionic led me to
+                my skills and making myself a well rounded software developer.</p>
+            <p data-aos="fade-up" data-aos-duration="1000">I also love building beautiful mobile applications with
+                Ionic. My discovery of Nuxt-Ionic led me to
                 explore the Ionic Framework itself, and I thoroughly enjoyed working with it. Currently, I use
-                Vue-Ionic, as Nuxt-Ionic is still in development at the time of writing.</p>
-            <p data-aos="fade-up" data-aos-duration="1000" >I am passionate about creating user-friendly and responsive web applications that deliver an exceptional
+                Vue-Ionic, as Nuxt-Ionic is still in development at the time of writing this.<br>(⚠️ @nuxtjs/ionic is
+                currently a work in progress. ⚠️)</p>
+            <p data-aos="fade-up" data-aos-duration="1000">I am passionate about creating user-friendly and responsive
+                web applications that deliver an exceptional
                 user experience. During my free time, I indulge in gaming and writing blogs. Currently, I contribute to
                 caalee.com, a wallpaper web app that I both designed and built. Additionally, I take pride in creating
                 all the wallpapers featured on the platform.</p>
@@ -27,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 8rem 0;
+    margin: 4rem 0;
     padding: 2rem 5rem;
 
     .inner {
@@ -60,4 +66,33 @@
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .aboutPage {
+        padding: 2rem 1rem;
+        .inner {
+            color: #eeeeee;
+
+            img {
+                border: 2px solid #eeeeee;
+            }
+
+            h3 {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .aboutPage {
+        .inner {
+            img {
+                width: 150px;
+            }
+
+        }
+    }
+}
+
 </style>
