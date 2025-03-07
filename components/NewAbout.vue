@@ -69,7 +69,6 @@
 
 @media (prefers-color-scheme: dark) {
     .aboutPage {
-        padding: 2rem 1rem;
         .inner {
             color: #eeeeee;
 
@@ -86,6 +85,7 @@
 
 @media (max-width: 700px) {
     .aboutPage {
+        padding: 2rem 1rem;
         .inner {
             img {
                 width: 150px;
