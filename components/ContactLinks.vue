@@ -1,10 +1,10 @@
 <template>
-    <div class="contLinks">
+    <div class="contLinks" id="contact" >
         <div class="inner">
             <a data-aos="fade-up" data-aos-delay="100" href="tel:+256 756 447856">
                 <Icon name="mdi:phone-dial" />
             </a>
-            <a data-aos="fade-up" data-aos-delay="200" href="https://taportfolio.vercel.app/images/gmailLogo.jpeg">
+            <a data-aos="fade-up" data-aos-delay="200" href="mailto:trevorarapu2@gmail.com">
                 <Icon name="logos:google-gmail" />
             </a>
             <a data-aos="fade-up" data-aos-delay="300" href="https://github.com/Trevor-143/">

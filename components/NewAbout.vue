@@ -1,5 +1,5 @@
 <template>
-    <div class="aboutPage">
+    <div class="aboutPage" id="about" >
         <div class="inner">
             <img data-aos="fade-up" data-aos-duration="1000" src="/images/trevor.jpg" alt="Trevor's image">
             <h3 data-aos="fade-up">

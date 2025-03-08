@@ -1,5 +1,5 @@
 <template>
-    <div class="skills">
+    <div class="skills" id="skills" >
         <div class="inner">
             <div class="top">
                 <h3 data-aos="fade-up" data-aos-duration="1000">Let me show you my toys. </h3>
@@ -33,7 +33,8 @@ const tech = ref([
     { name: 'Figma', img: '/stack/figma.png', category: 'Design' },
     { name: 'Canva', img: '/stack/canva.webp', category: 'Design' },
     { name: 'Capacitor js', img: '/stack/capacitor.png', category: 'App developement' },
-    { name: 'Appwrite', img: '/stack/appwrite.png', category: 'Data Storage & Auth' }
+    { name: 'Appwrite', img: '/stack/appwrite.png', category: 'Data Storage & Auth' },
+    { name: 'TinyMCE', img: '/stack/tinyMCE.png', category: 'Writting' }
 ])
 
 </script>

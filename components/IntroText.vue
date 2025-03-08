@@ -1,5 +1,5 @@
 <template>
-    <div class="mainIntro">
+    <div class="mainIntro" id="intro" >
         <div class="inner">
             <h1 data-aos="fade-down" data-aos-duration="1000" >Hey there! I'm a Front-End developer with some Back-End knowledge, and I also love design.</h1>
             <p data-aos="fade-up" >Basically, it means I am capable of taking on a project solo from beginning to end, and it won't suck, depending on its scale though. <span>😂</span></p>

@@ -27,5 +27,26 @@ export default defineNuxtConfig({
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "en",
+      },
+      title: "Trevor Arapu",
+      meta: [
+        {
+          name: "description",
+          content: "Hey there! I'm a Front-End developer with some Back-End knowledge, and I also love design.",
+        },
+        {
+          name: "author",
+          content: "Trevor Arapu"
+        }
+      ],
+      link: [{ rel: "icon", type: "image/png", href: "/images/trevor.png" }]
+    },
+    pageTransition: { name: "page", mode: "out-in" },
+    layoutTransition: { name: "page", mode: "out-in" }
   }
 })
