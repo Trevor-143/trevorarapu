@@ -6,6 +6,7 @@
             <Projects />
         </div>
         <Skills />
+        <ClientReviews />
         <NewAbout />
         <ContactLinks />
     </div>

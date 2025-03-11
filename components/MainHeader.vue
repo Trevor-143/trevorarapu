@@ -18,40 +18,44 @@
                     :class="{ active: activeSection === 'about' }">About</button>
                 <button data-aos="fade-down" data-aos-delay="200" @click="scrollToSection('contact')"
                     :class="{ active: activeSection === 'contact' }">Contact</button>
-                <button data-aos="fade-down" data-aos-delay="250" @click="goToExternal('git')" >GitHub</button>
-                <button data-aos="fade-down" data-aos-delay="300" @click="goToExternal('linkedIn')" >LinkedIn</button>
-                <button data-aos="fade-down" data-aos-delay="350" @click="downloadResume('/images/Resume.pdf', 'TrevorArapu.pdf')" > <Icon name="line-md:download-outline-loop" /> Resume</button>
+                <button data-aos="fade-down" data-aos-delay="250" @click="goToExternal('git')">GitHub</button>
+                <button data-aos="fade-down" data-aos-delay="300" @click="goToExternal('linkedIn')">LinkedIn</button>
+                <button data-aos="fade-down" data-aos-delay="350"
+                    @click="downloadResume('/images/Resume.pdf', 'TrevorArapu.pdf')">
+                    <Icon name="line-md:download-outline-loop" /> Resume
+                </button>
             </div>
             <div class="toggle" @click="toggleMiniMenu">
                 <Icon name="svg-spinners:pulse-multiple" />
             </div>
         </div>
-        <div class="smallMenu" :class="isMiniMenu ? 'showMini' : ''" @click="toggleMiniMenu" >
-            <button data-aos="fade-down" data-aos-delay="0" @click="scrollToSection('intro')" >
+        <div class="smallMenu" :class="isMiniMenu ? 'showMini' : ''" @click="toggleMiniMenu">
+            <button data-aos="fade-down" data-aos-delay="0" @click="scrollToSection('intro')">
                 <Icon name="line-md:hazard-lights-loop" /> Start
             </button>
-            <button data-aos="fade-down" data-aos-delay="0" @click="scrollToSection('projects')" >
+            <button data-aos="fade-down" data-aos-delay="0" @click="scrollToSection('projects')">
                 <Icon name="ri:archive-stack-line" /> Projects
             </button>
-            <button data-aos="fade-down" data-aos-delay="50" @click="scrollToSection('skills')" >
+            <button data-aos="fade-down" data-aos-delay="50" @click="scrollToSection('skills')">
                 <Icon name="ic:baseline-code-off" /> Stack
             </button>
-            <button data-aos="fade-down" data-aos-delay="100" @click="scrollToSection('reviews')" >
+            <button data-aos="fade-down" data-aos-delay="100" @click="scrollToSection('reviews')">
                 <Icon name="material-symbols:edit-square-outline-sharp" /> Reviews
             </button>
-            <button data-aos="fade-down" data-aos-delay="150" @click="scrollToSection('about')" >
+            <button data-aos="fade-down" data-aos-delay="150" @click="scrollToSection('about')">
                 <Icon name="material-symbols:account-circle-outline" /> About
             </button>
-            <button data-aos="fade-down" data-aos-delay="200" @click="scrollToSection('contact')" >
+            <button data-aos="fade-down" data-aos-delay="200" @click="scrollToSection('contact')">
                 <Icon name="material-symbols:call-log-outline-sharp" /> Contact
             </button>
-            <button data-aos="fade-down" data-aos-delay="250" @click="goToExternal('git')" >
+            <button data-aos="fade-down" data-aos-delay="250" @click="goToExternal('git')">
                 <Icon name="uil:github-alt" /> GitHub
             </button>
-            <button data-aos="fade-down" data-aos-delay="300" @click="goToExternal('linkedIn')" >
+            <button data-aos="fade-down" data-aos-delay="300" @click="goToExternal('linkedIn')">
                 <Icon name="streamline:computer-logo-linkedin-network-linkedin-professional" /> LinkedIn
             </button>
-            <button data-aos="fade-down" data-aos-delay="350" @click="downloadResume('/images/Resume.pdf', 'TrevorArapu.pdf')" >
+            <button data-aos="fade-down" data-aos-delay="350"
+                @click="downloadResume('/images/Resume.pdf', 'TrevorArapu.pdf')">
                 <Icon name="material-symbols:attach-file" /> Resume
             </button>
         </div>
@@ -74,7 +78,7 @@ const handleScroll = () => {
     const skills = document.getElementById('skills');
     const about = document.getElementById('about');
     const contact = document.getElementById('contact');
-    // const testis = document.getElementById('testis');
+    const testis = document.getElementById('reviews');
     // Add more sections as needed
 
     const offset = 50; // Adjust this offset as needed
@@ -89,9 +93,9 @@ const handleScroll = () => {
     if (skills && skills.getBoundingClientRect().top <= offset) {
         activeSection.value = 'skills';
     }
-    // if (testis && testis.getBoundingClientRect().top <= offset) {
-    //     activeSection.value = 'testis';
-    // }
+    if (testis && testis.getBoundingClientRect().top <= offset) {
+        activeSection.value = 'reviews';
+    }
     if (about && about.getBoundingClientRect().top <= offset) {
         activeSection.value = 'about';
     }
@@ -108,10 +112,10 @@ const scrollToSection = (sectionId) => {
 };
 
 const goToExternal = (where) => {
-    if(where === 'git') {
+    if (where === 'git') {
         window.open('https://github.com/Trevor-143/', '_blank')
     }
-    if(where === 'linkedIn') {
+    if (where === 'linkedIn') {
         window.open('https://www.linkedin.com/in/arapu-trevor/', '_blank')
     }
 }
@@ -150,7 +154,7 @@ onBeforeUnmount(() => {
 .mainHeader {
     position: fixed;
     // mix-blend-mode: difference;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-direction: column;
 
@@ -304,7 +308,12 @@ onBeforeUnmount(() => {
 
             .jumps {
                 button {
-                    color: #eeeeee;
+                    color: #b4b4b4;
+                }
+
+                .active {
+                    font-weight: 800;
+                    color: #ffffff;
                 }
             }
         }
