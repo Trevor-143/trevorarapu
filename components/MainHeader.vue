@@ -309,6 +309,11 @@ onBeforeUnmount(() => {
             .jumps {
                 button {
                     color: #b4b4b4;
+
+                    &:last-child {
+                        background-color: #eeeeee;
+                        color: #000000;
+                    }
                 }
 
                 .active {

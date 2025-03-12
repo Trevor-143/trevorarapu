@@ -81,7 +81,7 @@ const tech = ref([
                 width: 100%;
                 border: 2px solid #eeeeee;
                 background-color: #f3f3f3;
-                border-radius: 0.5rem;
+                border-radius: var(--mainRadius);
 
                 img {
                     height: 50px;
