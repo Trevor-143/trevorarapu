@@ -48,4 +48,11 @@ export const projects = [
         image: '/images/lionking.png',
         link: 'https://www.thelionkingsafaris.com/'
     },
+    {
+        id: 7,
+        name: 'Tour Guides Forum Uganda (TGFU)',
+        des: 'I built this web application using nuxt3, firebase and imagekit for image storage and optimisation. It is a platform for the tour guides forum association of Uganda with many members. The members can add their contacts and update them any time they choose.',
+        image: '/images/tourguides.png',
+        link: 'https://www.tourguidesforumuganda.org/'
+    },
 ]

@@ -9,7 +9,7 @@
                     <div class="stars">
                         <div class="star">
                             <span class="inDark" v-for="(i, index) in slide.number" :key="index">
-                                <Icon name="ic:round-star" color="fff16f" data-aos="fade-down" :data-aos-delay="index + 100" />
+                                <Icon name="ic:round-star" color="fff16f" data-aos="fade-down" :data-aos-delay="`${index}00`" />
                             </span>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ const swiper = useSwiper(containerRef, {
     effect: 'fade',
     loop: true,
     autoplay: {
-        delay: 8000,
+        delay: 10000,
         disableOnInteraction: false,
         pauseOnMouseEnter: true
     },

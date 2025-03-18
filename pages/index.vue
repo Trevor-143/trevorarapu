@@ -9,6 +9,7 @@
         <ClientReviews />
         <NewAbout />
         <ContactLinks />
+        <MainFooter />
     </div>
 </template>
 

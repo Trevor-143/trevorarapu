@@ -157,6 +157,7 @@ onBeforeUnmount(() => {
     z-index: 2;
     display: flex;
     flex-direction: column;
+    height: 4.5rem;
 
     .first {
         position: fixed;
@@ -170,7 +171,6 @@ onBeforeUnmount(() => {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        z-index: 2;
 
         .logo {
             display: flex;
@@ -258,9 +258,11 @@ onBeforeUnmount(() => {
         width: 100vw;
         padding: 1rem;
         padding-left: 2rem;
-        margin-top: 4.5rem;
+        margin-top: 4.4rem;
         transform: translateY(-100%);
         opacity: 0;
+        height: fit-content;
+        z-index: -10;
 
         button {
             width: fit-content;
@@ -282,6 +284,7 @@ onBeforeUnmount(() => {
     .showMini {
         transform: translateY(0);
         opacity: 1;
+        z-index: 1;
     }
 }
 
