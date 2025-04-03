@@ -23,7 +23,7 @@
 
 const tech = ref([
     { name: 'JavaScript', img: '/stack/js.png', category: 'Web development' },
-    { name: 'Css', img: '/stack/css.webp', category: 'Web development' },
+    { name: 'Css/Scss', img: '/stack/css.webp', category: 'Web development' },
     { name: 'Html', img: '/stack/html.png', category: 'Web development' },
     { name: 'Vue 3 js', img: '/stack/vuejs.png', category: 'Front-end development' },
     { name: 'Nuxt 3 js', img: '/stack/nuxtjs.png', category: 'Front-end developement' },
@@ -35,7 +35,8 @@ const tech = ref([
     { name: 'Capacitor js', img: '/stack/capacitor.png', category: 'App developement' },
     { name: 'Appwrite', img: '/stack/appwrite.png', category: 'Data Storage & Auth' },
     { name: 'TinyMCE', img: '/stack/tinyMCE.png', category: 'Writting' },
-    { name: 'Imagekit', img: '/stack/imagekit.jpeg', category: 'Image Optimisation' }
+    { name: 'Imagekit', img: '/stack/imagekit.jpeg', category: 'Image Optimisation' },
+    { name: 'AOS', img: '/stack/aos.png', category: 'Web animations' }
 ])
 
 </script>
@@ -72,8 +73,8 @@ const tech = ref([
         .skillList {
             display: grid;
             gap: 1rem;
-            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-            max-width: 1350px;
+            grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+            max-width: 1000px;
             width: 100%;
             margin-top: 2rem;
 
@@ -83,6 +84,10 @@ const tech = ref([
                 border: 2px solid #eeeeee;
                 background-color: #f3f3f3;
                 border-radius: var(--mainRadius);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
 
                 img {
                     height: 50px;

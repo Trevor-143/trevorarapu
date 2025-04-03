@@ -27,9 +27,10 @@
         flex-direction: column;
 
         h1 {
-            font-family: "Montserrat", sans-serif;
-            font-size: 3rem;
-            max-width: 900px;
+            // font-family: "Montserrat", sans-serif;
+            font-size: 2rem;
+            max-width: 850px;
+            font-weight: 700;
         }
 
         p {

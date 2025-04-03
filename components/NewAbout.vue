@@ -13,8 +13,7 @@
             <p data-aos="fade-up" data-aos-duration="1000">I also love building beautiful mobile applications with
                 Ionic. My discovery of Nuxt-Ionic led me to
                 explore the Ionic Framework itself, and I thoroughly enjoyed working with it. Currently, I use
-                Vue-Ionic, as Nuxt-Ionic is still in development at the time of writing this.<br>(⚠️ @nuxtjs/ionic is
-                currently a work in progress. ⚠️)</p>
+                Vue-Ionic, <span>as Nuxt-Ionic is still in development at the time of writing this.</span>. It's ready, I recently visited the nuxt-ionic page and i can't see the warning anymore. NUXT-IONIC here i come.</p>
             <p data-aos="fade-up" data-aos-duration="1000">I am passionate about creating user-friendly and responsive
                 web applications that deliver an exceptional
                 user experience. During my free time, I indulge in gaming and writing blogs. Currently, I contribute to
@@ -37,7 +36,7 @@
     padding: 2rem 5rem;
 
     .inner {
-        max-width: 1350px;
+        max-width: 1000px;
         width: 100%;
         display: flex;
         flex-direction: column;

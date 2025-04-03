@@ -38,7 +38,7 @@ const openLink = (link) => {
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
-    max-width: 1350px;
+    max-width: 1000px;
     width: 100%;
 
     .inner {

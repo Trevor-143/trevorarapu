@@ -62,7 +62,7 @@ const tech = ref([
             justify-content: center;
 
             h2 {
-                max-width: 1350px;
+                max-width: 1000px;
                 width: 100%;
                 display: flex;
                 align-items: center;
