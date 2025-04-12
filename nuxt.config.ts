@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     'assets/css/main.scss'
   ],
 
-  modules: ['nuxt-aos', '@nuxt/icon', 'nuxt-swiper', "nuxt-marquee"],
+  modules: ['nuxt-aos', '@nuxt/icon', 'nuxt-swiper', "nuxt-marquee", "@nuxtjs/color-mode"],
   aos: {
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
